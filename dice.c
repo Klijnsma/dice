@@ -12,15 +12,15 @@ int main(int argc, char** argv)
     uint64_t throws = 1;
 
     int option;
- 
+
     while ((option = getopt(argc, argv, ":s:t:")) != -1)
     {
         switch (option)
         {
         case 's':
-            if (optarg[0] == '-') 
-            { 
-                puts("Missing argument for -s.");
+            if (optarg[0] == '-')
+            {
+                puts("Missing argument for -s");
                 BAD_ARGS();
             }
             if (!(optarg[0] > 47 && optarg[0] < 58))
@@ -32,9 +32,9 @@ int main(int argc, char** argv)
             if (sides == 0) { return 0; }
             break;
         case 't':
-            if (optarg[0] == '-') 
-            { 
-                puts("Missing argument for -t.");
+            if (optarg[0] == '-')
+            {
+                puts("Missing argument for -t");
                 BAD_ARGS();
             }
             if (!(optarg[0] > 47 && optarg[0] < 58))
